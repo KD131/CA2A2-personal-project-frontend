@@ -15,6 +15,7 @@ import NoMatchPage from "./pages/NoMatchPage";
 import LoginPage from "./pages/LoginPage";
 import LogoutPage from "./pages/LogoutPage";
 import FunStuffPage from "./pages/FunStuffPage";
+import BookPage from "./pages/BookPage";
 
 
 export default function App() {
@@ -50,6 +51,7 @@ export default function App() {
       <Container className="pageContent pt-3 pb-3" fluid="sm">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/bookpage" element={<BookPage />} />
           <Route path="/user" element={<UserPage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/about" element={<AboutPage />} />
